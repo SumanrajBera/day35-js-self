@@ -84,6 +84,6 @@ form1.addEventListener("submit", function (dets) {
         alert("Form submitted Successfully")
         location.reload()
     }else {
-        alert("Both Mail and Password are required")
+        alert("Both Mail and Password are required and must be correct!")
     }
 })
