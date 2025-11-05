@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Password Validator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <form autocomplete="off" id="emailPassValidator">
+            <div class="grp">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email">
+                <small id="error"><i class="ri-close-line"></i> Email is invalid</small>
+                <small id="correct"><i class="ri-check-line"></i> Email is correct</small>
+            </div>
+
+            <div class="grp">
+                <label for="pass">Password:</label>
+                <input type="text" name="pass" id="pass" placeholder="Enter your password">
+                <small id="lenError"><i class="ri-close-line"></i> Password must have minimum length of 6</small>
+                <small id="numError"><i class="ri-close-line"></i> Password must have number</small>
+                <small id="capError"><i class="ri-close-line"></i> Password must have a uppercase letter</small>
+                <small id="lowError"><i class="ri-close-line"></i> Password must have a lowercase letter</small>
+                <small id="spError"><i class="ri-close-line"></i> Password must have a special chracter</small>
+                <small id="passCorrect"><i class="ri-check-line"></i> Password is correct</small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
